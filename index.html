@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Emi Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <body>
+    <h1 class="heading">LOAN EMI CALCULATOR</h1>
+
+    <div class="main">
+      <div class="topbar"></div>
+      <div class="top">
+        <div class="userinput">
+          <label for="">LOAN AMOUNT : </label>
+          <input type="text" id="loanamount" />
+        </div>
+        <div class="userinput">
+          <label for="">LOAN TENURE (MONTHS) : </label>
+          <input type="text" id="tenure" />
+        </div>
+        <div class="userinput ui-4">
+          <label for="">INTEREST RATE (% P.A.) : </label>
+          <input type="text" id="interest" />
+        </div>
+        <div class="userinput">
+          <button id="btn" class="btn">Calculate EMI</button>
+        </div>
+      </div>
+
+      <div class="result">
+        <canvas id="chart"></canvas>
+        <p id="monthlyemi">Montly EMI :</p>
+        <p id="interestloan">Interest On Loan :</p>
+        <p id="pa">Principle Amount :</p>
+        <p id="totalamount">Total Amount to Pay :</p>
+      </div>
+
+      <div class="topbar"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

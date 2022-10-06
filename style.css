@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lexend, sans-serif;
+  background-color: #011936;
+  margin-top: 0px;
+  color: #011936;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #f4fffd;
+}
+
+.main {
+  background-color: #f4fffd;
+  display: flex;
+  width: 550px;
+  flex-direction: column;
+  padding: 40px 30px;
+  gap: 25px;
+  max-width: 95%;
+  border-radius: 4px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.userinput {
+  width: 50%;
+  max-width: 100%;
+}
+
+.ui-4 {
+  margin-top: 30px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  width: 220px;
+  font-size: 17px;
+  border-radius: 4px;
+  padding: 10px;
+  border-color: black;
+  font-family: Lexend, sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  background-color: #011936;
+  border: none;
+  color: #f4fffd;
+}
+
+.btn {
+  height: 50px;
+  width: 221px;
+  font-size: 17px;
+  border-radius: 4px;
+  font-family: Lexend, sans-serif;
+  margin-top: 54px;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid #011936;
+  color: #011936;
+  font-weight: 700;
+  background: none;
+}
+
+.btn:hover {
+  background-color: #011936;
+  color: #f4fffd;
+  transition: all 0.2s ease-in-out;
+}
+
+.topbar {
+  background-color: #092327;
+  width: 100%;
+  height: 5px;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+.result {
+  font-size: 18px;
+}
+p {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#chart {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .main {
+    width: 90%;
+  }
+
+  .top {
+    flex-direction: column;
+    gap: 25px;
+    max-width: 90%;
+  }
+
+  .btn,
+  .ui-4 {
+    margin-top: 0;
+  }
+
+  .userinput {
+    width: 100%;
+  }
+}
